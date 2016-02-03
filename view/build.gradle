@@ -28,9 +28,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.1.1'
 }
 
-def siteUrl = 'https://github.com/saiwu-bigkoo/Android-PickerView'                        // #修改# // 项目的主页地址，我这里是我的PickerView项目在github的链接地址
-def gitUrl = 'https://github.com/saiwu-bigkoo/Android-PickerView.git'                     // #修改# // 项目 git 地址，我这里同样是用Github上的git地址
-group = "com.bigkoo"             // #修改# // 组名称，这个相当于依赖的时候 compile 'com.bigkoo:pickerview:1.0.1' “:”号前面的前缀
+def siteUrl = 'https://github.com/zhendechen/TestGradle'
+def gitUrl = 'https://github.com/zhendechen/TestGradle.git'
+group = "com.zhende"
 
 install {
     repositories.mavenInstaller {
@@ -93,7 +93,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "PickerView"                                                 // #修改# //  在 jcenter 上面的项目名字
+        name = "view"
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
